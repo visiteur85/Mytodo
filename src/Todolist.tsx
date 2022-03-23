@@ -1,5 +1,7 @@
 import React, {ChangeEvent, KeyboardEvent, useState} from 'react';
 import {FilterValuesType} from './App';
+import {useSelector} from "react-redux";
+import {rootReducerType} from "./store/store";
 
 export type TaskType = {
     id: string
@@ -9,15 +11,27 @@ export type TaskType = {
 
 type PropsType = {
     title: string
-    tasks: Array<TaskType>
+
     removeTask: (taskId: string) => void
     changeFilter: (value: FilterValuesType) => void
     addTask: (title: string) => void
     changeTaskStatus: (taskId: string, isDone: boolean) => void
-    filter: FilterValuesType
+
 }
 
 export function Todolist(props: PropsType) {
+
+    let tasks = useSelector<rootReducerType, Array<TaskType>>(state=>state.task);
+    let filter = useSelector<rootReducerType, FilterValuesType>(state=>state.filtered);
+
+    let tasksForTodolist = tasks;
+
+    if (filter === "active") {
+        tasksForTodolist = tasks.filter((t) => t.isDone === false);
+    }
+    if (filter === "completed") {
+        tasksForTodolist = tasks.filter((t) => t.isDone === true);
+    }
 
     let [title, setTitle] = useState("")
     let [error, setError] = useState<string | null>(null)
@@ -60,7 +74,7 @@ export function Todolist(props: PropsType) {
         </div>
         <ul>
             {
-                props.tasks.map(t => {
+                tasksForTodolist.map(t => {
                     const onClickHandler = () => props.removeTask(t.id)
                     const onChangeHandler = (e: ChangeEvent<HTMLInputElement>) => {
                         props.changeTaskStatus(t.id, e.currentTarget.checked);
@@ -77,11 +91,11 @@ export function Todolist(props: PropsType) {
             }
         </ul>
         <div>
-            <button className={props.filter === 'all' ? "active-filter" : ""}
+            <button className={filter === 'all' ? "active-filter" : ""}
                     onClick={onAllClickHandler}>All</button>
-            <button className={props.filter === 'active' ? "active-filter" : ""}
+            <button className={filter === 'active' ? "active-filter" : ""}
                 onClick={onActiveClickHandler}>Active</button>
-            <button className={props.filter === 'completed' ? "active-filter" : ""}
+            <button className={filter === 'completed' ? "active-filter" : ""}
                 onClick={onCompletedClickHandler}>Completed</button>
         </div>
     </div>

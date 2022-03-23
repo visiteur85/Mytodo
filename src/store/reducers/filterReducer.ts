@@ -2,7 +2,9 @@ import { v1 } from "uuid";
 import { TaskType } from "../../Todolist";
 import {FilterValuesType} from "../../App";
 
-export const filterReducer = (state: FilterValuesType, action: changeFiltertype) => {
+let initialState:FilterValuesType = "all"
+
+export const filterReducer = (state = initialState, action: changeFiltertype) => {
     switch(action.type) {
         case "CHANGE-FILTER":{
             return action.payload.value
