@@ -1,0 +1,31 @@
+
+export type FirstTasksActionType = {
+    type: '',
+
+}
+export type SecondTasksActionType = {
+    type: '',
+
+}
+
+
+type ActionsType = FirstTasksActionType | SecondTasksActionType ;
+
+export const tasksReducer = (state: TasksStateType, action: ActionsType): TasksStateType  => {
+    switch (action.type) {
+        case '':
+            return state
+        case '':
+            return state
+
+        default:
+            throw new Error("I don't understand this type")
+    }
+}
+
+export const RemoveTodolistAC = (): FirstTasksActionType => {
+    return { type: '' }
+}
+export const AddTodolistAC = (): SecondTasksActionType => {
+    return { type: '' }
+}
