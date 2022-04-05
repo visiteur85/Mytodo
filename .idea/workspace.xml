@@ -2,15 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="88f24762-b58a-492a-b112-71867b3ec24c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/store/reducers/taskReducer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/App.test.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/store.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/tasksReducer.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AddItemForm.tsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EditableSpan.tsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Todolist.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducers/filterReducer.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducers/tasksReducer.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/store.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/taskReducer.test.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/taskReducer.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/todolists-reducer.test.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/todolists-reducer.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/user-reducer.test.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/user-reducer.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +27,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
       </list>
     </option>
@@ -31,28 +39,107 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="26gyc3Hs2A1QL9BOIYjWmgH7DSS" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/store/reducers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/react-scripts" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="ts.external.directory.path" value="C:\Users\User\Desktop\IT\my-todo\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Desktop\IT\my-todo\src\state" />
       <recent name="C:\Users\User\Desktop\IT\my-todo\src\store\reducers" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\User\Desktop\IT\my-todo\src\store\reducers" />
     </key>
+  </component>
+  <component name="RunManager" selected="Jest.correct task should be deleted from correct array">
+    <configuration name="correct task should be deleted from correct array" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/state/taskReducer.test.tsx" />
+      <test-names>
+        <test-name value="correct task should be deleted from correct array" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="new array should be added when new todolist is added" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/state/taskReducer.test.ts" />
+      <test-names>
+        <test-name value="new array should be added when new todolist is added" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="status of specified task should be changed" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/state/taskReducer.test.ts" />
+      <test-names>
+        <test-name value="status of specified task should be changed" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="taskReducer.test.ts" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST_FILE" />
+      <test-file value="$PROJECT_DIR$/src/state/taskReducer.test.ts" />
+      <method v="2" />
+    </configuration>
+    <configuration name="title of specified task should be changed" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/state/taskReducer.test.ts" />
+      <test-names>
+        <test-name value="title of specified task should be changed" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Jest.correct task should be deleted from correct array" />
+        <item itemvalue="Jest.taskReducer.test.ts" />
+        <item itemvalue="Jest.new array should be added when new todolist is added" />
+        <item itemvalue="Jest.title of specified task should be changed" />
+        <item itemvalue="Jest.status of specified task should be changed" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -70,6 +157,15 @@
       <workItem from="1648118732880" duration="2277000" />
       <workItem from="1648121034853" duration="37000" />
       <workItem from="1648121862577" duration="121000" />
+      <workItem from="1648143629151" duration="2586000" />
+      <workItem from="1648154961585" duration="25000" />
+      <workItem from="1648462200355" duration="10474000" />
+      <workItem from="1648474123876" duration="385000" />
+      <workItem from="1648474522039" duration="1765000" />
+      <workItem from="1648541804380" duration="7067000" />
+      <workItem from="1648989426241" duration="228000" />
+      <workItem from="1648992434526" duration="62000" />
+      <workItem from="1649162431034" duration="4341000" />
     </task>
     <task id="LOCAL-00001" summary="add two reducers">
       <created>1647949571440</created>
@@ -85,15 +181,39 @@
       <option name="project" value="LOCAL" />
       <updated>1648039948761</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add redux by myself">
+      <created>1648474595021</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1648474595031</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add les9">
+      <created>1648556051973</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1648556051973</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add les9 part 1">
+      <created>1648992471554</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1648992471554</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="add two reducers" />
     <MESSAGE value="add redux by myself" />
-    <option name="LAST_COMMIT_MESSAGE" value="add redux by myself" />
+    <MESSAGE value="add les9" />
+    <MESSAGE value="add les9 part 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="add les9 part 1" />
   </component>
 </project>
