@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="88f24762-b58a-492a-b112-71867b3ec24c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/state/store.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/todolist10part1/1.rar" afterDir="false" />
+    <list default="true" id="88f24762-b58a-492a-b112-71867b3ec24c" name="Changes" comment="add les1-10 part3">
+      <change afterPath="$PROJECT_DIR$/src/AppWithReducers.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Task.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Task1.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppWithReducer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppWithRedux.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,8 +23,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -161,7 +166,20 @@
       <workItem from="1649169876583" duration="376000" />
       <workItem from="1649265159140" duration="7000" />
       <workItem from="1649328374560" duration="340000" />
-      <workItem from="1649328743695" duration="10414000" />
+      <workItem from="1649328743695" duration="10533000" />
+      <workItem from="1649359614497" duration="12000" />
+      <workItem from="1649435860454" duration="3920000" />
+      <workItem from="1649506978669" duration="7000" />
+      <workItem from="1649518345752" duration="7000" />
+      <workItem from="1649518354402" duration="1324000" />
+      <workItem from="1649596742749" duration="5149000" />
+      <workItem from="1649699669064" duration="3610000" />
+      <workItem from="1649707274946" duration="421000" />
+      <workItem from="1649707951023" duration="565000" />
+      <workItem from="1649751943557" duration="6000" />
+      <workItem from="1649927535597" duration="160000" />
+      <workItem from="1649927707315" duration="179000" />
+      <workItem from="1649927889969" duration="11167000" />
     </task>
     <task id="LOCAL-00001" summary="add two reducers">
       <created>1647949571440</created>
@@ -212,7 +230,28 @@
       <option name="project" value="LOCAL" />
       <updated>1649344312848</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add les1-10 part2">
+      <created>1649352435829</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1649352435829</updated>
+    </task>
+    <task id="LOCAL-00009" summary="add les1-10 part3">
+      <created>1649439480264</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1649439480264</updated>
+    </task>
+    <task id="LOCAL-00010" summary="add les1-6 full">
+      <created>1649708513892</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1649708513892</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,6 +265,21 @@
     <MESSAGE value="add les9 part 1" />
     <MESSAGE value="add les1-9" />
     <MESSAGE value="add les1-10 part1" />
-    <option name="LAST_COMMIT_MESSAGE" value="add les1-10 part1" />
+    <MESSAGE value="add les1-10 part2" />
+    <MESSAGE value="add les1-10 part3" />
+    <MESSAGE value="add les1-6 full" />
+    <option name="LAST_COMMIT_MESSAGE" value="add les1-6 full" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/Task1.tsx</url>
+          <line>16</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
