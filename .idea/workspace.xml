@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="88f24762-b58a-492a-b112-71867b3ec24c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/task.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/task1.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Task.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Task1.tsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +40,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/react-scripts" />
@@ -51,6 +55,7 @@
       <recent name="C:\Users\User\Desktop\IT\my-todo\src\store\reducers" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Desktop\IT\my-todo\src" />
       <recent name="C:\Users\User\Desktop\IT\my-todo\src\store\reducers" />
     </key>
   </component>
@@ -172,7 +177,10 @@
       <workItem from="1650016952755" duration="4000" />
       <workItem from="1650017001177" duration="6000" />
       <workItem from="1650017009708" duration="4977000" />
-      <workItem from="1650032812928" duration="2691000" />
+      <workItem from="1650032812928" duration="2907000" />
+      <workItem from="1650047874746" duration="12000" />
+      <workItem from="1650115075519" duration="1432000" />
+      <workItem from="1650193259482" duration="5344000" />
     </task>
     <task id="LOCAL-00001" summary="add two reducers">
       <created>1647949571440</created>
@@ -251,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649948593383</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="add les11">
+      <created>1650041321879</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1650041321879</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,16 +285,5 @@
     <MESSAGE value="add les1-6 full" />
     <MESSAGE value="add les11" />
     <option name="LAST_COMMIT_MESSAGE" value="add les11" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/Task1.tsx</url>
-          <line>16</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
