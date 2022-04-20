@@ -2,11 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="88f24762-b58a-492a-b112-71867b3ec24c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/task.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/task1.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AddItemForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EditableSpan.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todolist10part1.rar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Task.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Task1.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppWithReducers.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Task.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/task.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/task1.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/todolist10part1/1.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +49,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/react-scripts" />
@@ -59,7 +68,7 @@
       <recent name="C:\Users\User\Desktop\IT\my-todo\src\store\reducers" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.propertry with todolistId should be deleted">
+  <component name="RunManager" selected="Jest.correct task should be deleted from correct array">
     <configuration name="correct task should be deleted from correct array" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -86,19 +95,6 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="new array should be added when new todolist is added" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/state/taskReducer.test.ts" />
-      <test-names>
-        <test-name value="new array should be added when new todolist is added" />
-      </test-names>
-      <method v="2" />
-    </configuration>
     <configuration name="propertry with todolistId should be deleted" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -122,13 +118,23 @@
       <test-file value="$PROJECT_DIR$/src/state/taskReducer.test.ts" />
       <method v="2" />
     </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.start" />
         <item itemvalue="Jest.propertry with todolistId should be deleted" />
         <item itemvalue="Jest.correct todolist should be removed" />
         <item itemvalue="Jest.correct task should be deleted from correct array" />
         <item itemvalue="Jest.taskReducer.test.ts" />
-        <item itemvalue="Jest.new array should be added when new todolist is added" />
       </list>
     </recent_temporary>
   </component>
@@ -180,7 +186,30 @@
       <workItem from="1650032812928" duration="2907000" />
       <workItem from="1650047874746" duration="12000" />
       <workItem from="1650115075519" duration="1432000" />
-      <workItem from="1650193259482" duration="5344000" />
+      <workItem from="1650193259482" duration="5384000" />
+      <workItem from="1650268914363" duration="37000" />
+      <workItem from="1650269014427" duration="1745000" />
+      <workItem from="1650270785668" duration="1612000" />
+      <workItem from="1650272421827" duration="90000" />
+      <workItem from="1650301719705" duration="11000" />
+      <workItem from="1650463281003" duration="329000" />
+      <workItem from="1650463709181" duration="13000" />
+      <workItem from="1650463762219" duration="31000" />
+      <workItem from="1650463803970" duration="38000" />
+      <workItem from="1650463872190" duration="65000" />
+      <workItem from="1650464052267" duration="196000" />
+      <workItem from="1650464271685" duration="60000" />
+      <workItem from="1650464354638" duration="71000" />
+      <workItem from="1650464704654" duration="137000" />
+      <workItem from="1650464859602" duration="56000" />
+      <workItem from="1650464936874" duration="47000" />
+      <workItem from="1650464994902" duration="194000" />
+      <workItem from="1650465217152" duration="450000" />
+      <workItem from="1650465698466" duration="153000" />
+      <workItem from="1650465873469" duration="104000" />
+      <workItem from="1650465998516" duration="38000" />
+      <workItem from="1650466068917" duration="56000" />
+      <workItem from="1650466136359" duration="9953000" />
     </task>
     <task id="LOCAL-00001" summary="add two reducers">
       <created>1647949571440</created>
@@ -266,7 +295,21 @@
       <option name="project" value="LOCAL" />
       <updated>1650041321879</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="add les11 by mySelf">
+      <created>1650198670655</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1650198670655</updated>
+    </task>
+    <task id="LOCAL-00014" summary="add les11 new Comp">
+      <created>1650272461423</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1650272461423</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -284,6 +327,8 @@
     <MESSAGE value="add les1-10 part3" />
     <MESSAGE value="add les1-6 full" />
     <MESSAGE value="add les11" />
-    <option name="LAST_COMMIT_MESSAGE" value="add les11" />
+    <MESSAGE value="add les11 by mySelf" />
+    <MESSAGE value="add les11 new Comp" />
+    <option name="LAST_COMMIT_MESSAGE" value="add les11 new Comp" />
   </component>
 </project>
