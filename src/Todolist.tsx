@@ -40,9 +40,7 @@ export function Todolist(props: PropsType) {
     return <div>
         <h3><EditableSpan title={props.title}/><button onClick={removeTodolistHandler}>x</button> </h3>
         <div>
-            {/*<AddItemForm addTask={props.addTask}*/}
-            {/*todoListId={props.todolistId}*/}
-            {/*/>*/}
+          
             <AddItemForm callback={callbackHandler}/>
         </div>
         <ul>

@@ -3,7 +3,7 @@ import './App.css';
 import {TaskType, Todolist} from './Todolist';
 import {v1} from "uuid";
 import {AddItemForm} from "./AddItemForm";
-
+// доделываем компоненты EditableSpan
 export type TodolistType = {
     id: string
     title: string
