@@ -8,19 +8,37 @@ const instanse = axios.create({
 })
 
 export const TodolistAPI = {
-    getTodos: ()=> {
-        return instanse.get("todo-lists")
+    getTodos: () => {
+        return instanse.get<TodoType[]>("todo-lists")
 
     },
-    createTodo:(title:string)=>{
-        return instanse.post("todo-lists", {title})
+    createTodo: (title: string) => {
+        return instanse.post<BaseType<{ item: TodoType }>>("todo-lists", {title})
 
     },
-    deleteTodo:(todolistId:string)=>{
-        return instanse.delete(`todo-lists/${todolistId}`, )
+    deleteTodo: (todolistId: string) => {
+        return instanse.delete<BaseType<{}>>(`todo-lists/${todolistId}`,)
     },
-    updateTitle:(todolistId:string, newTitle:string )=>{
-        return instanse.put(`todo-lists/${todolistId}`, {title:newTitle})
+    updateTitle: (todolistId: string, newTitle: string) => {
+        return instanse.put<BaseType<{}>>(`todo-lists/${todolistId}`, {title: newTitle})
     }
 
 }
+//types
+type BaseType<T> = {
+    messages: string[]
+    fieldsErrors: string[]
+    resultCode: number
+    data: T
+}
+type TodoType = {
+    id: string
+    title: string
+    addedDate: string
+    order: number
+}
+
+
+
+
+
