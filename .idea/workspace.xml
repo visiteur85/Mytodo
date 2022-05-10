@@ -2,9 +2,61 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="88f24762-b58a-492a-b112-71867b3ec24c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/reportWebVitals.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/todolist-api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/todolist-api.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/todolists-api.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/stories/todolists-api.stories.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/5WithReducer.zip.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/for Todo.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forTodo9.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/it-incubator-todolist-ts-02.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/it-incubator-todolist-ts-05.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/it-incubator-todolist-ts-06(1).zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/it-incubator-todolist-ts-07.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/it-incubator-todolist-ts-09.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/it-incubator-todolist-ts-10.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/it-incubator-todolist-ts-11.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/it-incubator-todolist-ts-12.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AddItemForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/AddItemForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EditableSpan.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/EditableSpan.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Task.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Todolist.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/todolist-api.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/serviceWorker.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/setupTests.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/setupTests.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/tasks-reducer.test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/tasks-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/tasks-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/todolists-reducer.test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/todolists-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/todolists-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/todolists-tasks-reducer.test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/user-reducer.test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/user-reducer.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/Button.stories.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/Button.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/Header.stories.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/Header.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/Introduction.stories.mdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/Page.stories.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/Page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/assets/code-brackets.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/assets/colors.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/assets/comments.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/assets/direction.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/assets/flow.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/assets/plugin.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/assets/repo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/assets/stackalt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/button.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/header.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/page.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/todolists-api.stories.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Вторник 8.zip" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -209,7 +261,25 @@
       <workItem from="1651327015616" duration="17000" />
       <workItem from="1651330601828" duration="2081000" />
       <workItem from="1651411229087" duration="14000" />
-      <workItem from="1651571855395" duration="9539000" />
+      <workItem from="1651571855395" duration="10749000" />
+      <workItem from="1651664284418" duration="14000" />
+      <workItem from="1651745900922" duration="4257000" />
+      <workItem from="1652177904091" duration="179000" />
+      <workItem from="1652178122614" duration="152000" />
+      <workItem from="1652178296453" duration="65000" />
+      <workItem from="1652178448437" duration="94000" />
+      <workItem from="1652178545212" duration="132000" />
+      <workItem from="1652178694584" duration="41000" />
+      <workItem from="1652178771694" duration="102000" />
+      <workItem from="1652178910102" duration="239000" />
+      <workItem from="1652179169185" duration="132000" />
+      <workItem from="1652179324511" duration="21000" />
+      <workItem from="1652179373106" duration="83000" />
+      <workItem from="1652179481656" duration="114000" />
+      <workItem from="1652179619131" duration="99000" />
+      <workItem from="1652179747433" duration="49000" />
+      <workItem from="1652179822561" duration="385000" />
+      <workItem from="1652180232913" duration="5563000" />
     </task>
     <task id="LOCAL-00001" summary="add two reducers">
       <created>1647949571440</created>
@@ -358,7 +428,21 @@
       <option name="project" value="LOCAL" />
       <updated>1651575571345</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="add les 13 all">
+      <created>1651590257363</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1651590257363</updated>
+    </task>
+    <task id="LOCAL-00023" summary="add less 13 all byMyself">
+      <created>1651751630496</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1651751630496</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -384,6 +468,8 @@
     <MESSAGE value="add AddItemForm my todo" />
     <MESSAGE value="add EditableSpan my todo" />
     <MESSAGE value="add les 13 part 1 mySelf" />
-    <option name="LAST_COMMIT_MESSAGE" value="add les 13 part 1 mySelf" />
+    <MESSAGE value="add les 13 all" />
+    <MESSAGE value="add less 13 all byMyself" />
+    <option name="LAST_COMMIT_MESSAGE" value="add less 13 all byMyself" />
   </component>
 </project>
