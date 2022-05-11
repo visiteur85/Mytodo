@@ -34,6 +34,7 @@ function App() {
 
 
     useEffect(()=> {
+
         let pr = todolistsAPI.getTodolists()
         pr.then((res)=> {
          const todos = res.data
@@ -44,6 +45,7 @@ function App() {
     const todolists = useSelector<AppRootStateType, Array<TodolistDomainType>>(state => state.todolists)
     const tasks = useSelector<AppRootStateType, TasksStateType>(state => state.tasks)
     const dispatch = useDispatch();
+
 
     const removeTask = useCallback(function (id: string, todolistId: string) {
         const action = removeTaskAC(id, todolistId);
@@ -105,6 +107,7 @@ function App() {
                 <Grid container spacing={3}>
                     {
                         todolists.map(tl => {
+                            debugger
                             let allTodolistTasks = tasks[tl.id];
 
                             return <Grid item key={tl.id}>

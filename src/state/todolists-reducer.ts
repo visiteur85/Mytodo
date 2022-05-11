@@ -1,5 +1,5 @@
-import { v1 } from 'uuid';
-import { TodolistType } from '../api/todolists-api'
+import {v1} from 'uuid';
+import {TodolistType} from '../api/todolists-api'
 
 export type RemoveTodolistActionType = {
     type: 'REMOVE-TODOLIST',
@@ -68,9 +68,12 @@ export const todolistsReducer = (state: Array<TodolistDomainType> = initialState
         }
 
         case "SET-TODOS": {
-            let newState = [];
+            let newState: any = action.todos.map((tl) => {
+                return {...tl, filter: "all"}
+            })
             return newState
-        }
+
+    }
         default:
             return state;
     }
@@ -89,8 +92,10 @@ export const changeTodolistFilterAC = (id: string, filter: FilterValuesType): Ch
     return {type: 'CHANGE-TODOLIST-FILTER', id: id, filter: filter}
 }
 
-export const setTodosAC = (todos:TodolistType[]) => {
-    return {type: 'SET-TODOS',
-        todos} as const
+export const setTodosAC = (todos: TodolistType[]) => {
+    return {
+        type: 'SET-TODOS',
+        todos:todos
+    } as const
 }
 
