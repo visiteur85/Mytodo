@@ -1,51 +1,37 @@
-import React, { ChangeEvent, KeyboardEvent, useState } from 'react';
-import TextField from '@mui/material/TextField';
-import IconButton from '@mui/material/IconButton';
-import { AddBox } from '@mui/icons-material';
+import React, {useState} from 'react';
 
-type AddItemFormPropsType = {
-    addItem: (title: string) => void
+type PropsType = {
+    callback:(title:string)=>void
 }
 
-export const AddItemForm = React.memo(function (props: AddItemFormPropsType) {
-    console.log('AddItemForm called')
+export const AddItemForm = (props:PropsType) => {
 
-    let [title, setTitle] = useState('')
-    let [error, setError] = useState<string | null>(null)
+    const [title, setTitle] = useState("");
+    const [error, setError] = useState<string | null>(null)
 
-    const addItem = () => {
-        if (title.trim() !== '') {
-            props.addItem(title);
-            setTitle('');
-        } else {
-            setError('Title is required');
+    const addTaskHandler = () => {
+        if (title.trim() !== "") {
+      props.callback(title)
+        setTitle("")}
+        else {setError("Введите текст")}
+    };
+    const onChangeTitleHandler = (e:any) => {
+      setTitle(e.currentTarget.value)
+    };
+    const onKeyPreessHandler = (e:any) => {
+        setError(null)
+        if (e.key === "Enter") {
+            addTaskHandler();
         }
-    }
 
-    const onChangeHandler = (e: ChangeEvent<HTMLInputElement>) => {
-        setTitle(e.currentTarget.value)
-    }
 
-    const onKeyPressHandler = (e: KeyboardEvent<HTMLInputElement>) => {
-        if (error !== null) {
-            setError(null);
-        }
-        if (e.charCode === 13) {
-            addItem();
-        }
     }
+    return (
+        <div>
+            <input onKeyPress={onKeyPreessHandler} value={title} onChange={onChangeTitleHandler}/>
+            <button onClick={addTaskHandler}>+</button>
+            {error && <div>{error}</div>}
+        </div>
+    );
+};
 
-    return <div>
-        <TextField variant="outlined"
-                   error={!!error}
-                   value={title}
-                   onChange={onChangeHandler}
-                   onKeyPress={onKeyPressHandler}
-                   label="Title"
-                   helperText={error}
-        />
-        <IconButton color="primary" onClick={addItem}>
-            <AddBox/>
-        </IconButton>
-    </div>
-})
