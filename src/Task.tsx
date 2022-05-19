@@ -8,9 +8,6 @@ type PropsType = {
     taskId:string
     todolistId:string
     changeTaskStatus:(todolistId:string, taskId:string, newIsDone:boolean)=>void
-    // changeTitleHandler:(title:string)=>void
-    changeTaskTitle:(taskId:string, newTitle:string)=>void
-
 }
 
 export const Task = (props:PropsType) => {
@@ -22,15 +19,11 @@ export const Task = (props:PropsType) => {
         let newIsDone = e.currentTarget.checked
         props.changeTaskStatus(props.todolistId, props.taskId, newIsDone)
     }
-    
-    const changeTitleHandler = (title:string) => {
-      props.changeTaskTitle(props.taskId, title)
-    }
 
     return (
         <div>
             <li><input type="checkbox" onChange={changeTaskStatus} checked={props.isDone}/>
-                <EditableSpan changeTitleHandler={changeTitleHandler} title={props.title}/>
+                <EditableSpan title={props.title}/>
                 <button onClick={removeTaskHandler}>x</button>
             </li>
         </div>

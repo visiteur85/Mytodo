@@ -21,8 +21,6 @@ type PropsType = {
     addTask:(title: string, todoListId: string)=>void
     changeTaskStatus:(todolistId:string, taskId:string, newIsDone:boolean)=>void
     removeTodolist:(todolistId:string)=>void
-    changeTaskTitle:(todolistId: string, taskId: string, newTitle:string)=>void
-    changeTodolistTitle:(todolistId: string, newTitle:string)=>void
 }
 
 export function Todolist(props: PropsType) {
@@ -39,15 +37,8 @@ export function Todolist(props: PropsType) {
 
     }
 
-    const changeTitleHandler = (newTitle:string) => {
-        props.changeTodolistTitle(props.todolistId, newTitle)
-    };
-    const changeTaskTitle = (taskId:string, newTitle:string)=> {
-        props.changeTaskTitle(props.todolistId, taskId, newTitle)
-    }
-
     return <div>
-        <h3><EditableSpan changeTitleHandler={changeTitleHandler}  title={props.title}/><button onClick={removeTodolistHandler}>x</button> </h3>
+        <h3><EditableSpan title={props.title}/><button onClick={removeTodolistHandler}>x</button> </h3>
         <div>
           
             <AddItemForm callback={callbackHandler}/>
@@ -60,9 +51,6 @@ export function Todolist(props: PropsType) {
                           title={m.title}
                           todolistId={props.todolistId}
                           changeTaskStatus={props.changeTaskStatus}
-                          // changeTitleHandler={changeTitleHandler}
-                          changeTaskTitle={changeTaskTitle}
-
                     />
                 )
             })}
