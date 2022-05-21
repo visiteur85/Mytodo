@@ -1,8 +1,10 @@
 import React from 'react';
-import {ButtonsType} from "./App";
+import {ButtonsType, TasksStateType} from "./App";
 import {Task} from "./Task";
 import {EditableSpan} from "./EditableSpan";
 import {AddItemForm} from "./AddItemForm";
+import {useSelector} from "react-redux";
+import {rootReducerType} from "./state/store";
 
 
 export type TaskType = {
@@ -24,6 +26,8 @@ type PropsType = {
 }
 
 export function Todolist(props: PropsType) {
+    let tasks = useSelector<rootReducerType, Array<TaskType>>(state=>state.tasks[props.todolistId])
+
 
 
     const changeFilterHandler = (value: ButtonsType) => {
