@@ -1,25 +1,26 @@
-import React, {useState} from 'react';
+import React, {useCallback, useState} from 'react';
 
 type PropsType = {
     callback:(title:string)=>void
 }
 
-export const AddItemForm = (props:PropsType) => {
+export const AddItemForm = React.memo ((props:PropsType) => {
 
     const [title, setTitle] = useState("");
     const [error, setError] = useState<string | null>(null)
 
-    const addTaskHandler = () => {
+    const addTaskHandler =  () => {
         if (title.trim() !== "") {
       props.callback(title)
         setTitle("")}
         else {setError("Введите текст")}
     };
-    const onChangeTitleHandler = (e:any) => {
+    const onChangeTitleHandler =  (e:any) => {
       setTitle(e.currentTarget.value)
     };
     const onKeyPreessHandler = (e:any) => {
-        setError(null)
+        if (error !==null) {
+        setError(null)}
         if (e.key === "Enter") {
             addTaskHandler();
         }
@@ -33,5 +34,5 @@ export const AddItemForm = (props:PropsType) => {
             {error && <div>{error}</div>}
         </div>
     );
-};
+});
 

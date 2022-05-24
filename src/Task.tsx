@@ -1,24 +1,24 @@
-import React from 'react';
+import React, {useCallback} from 'react';
 import {EditableSpan} from "./EditableSpan";
 
 type PropsType = {
     isDone:boolean
     title:string
-    removeTask:(taskId:string, todoListId:string)=>void
+    removeTask:(taskId: string)=>void
     taskId:string
     todolistId:string
-    changeTaskStatus:(todolistId:string, taskId:string, newIsDone:boolean)=>void
+    changeTaskStatus:(taskId: string, newIsDone:boolean)=>void
 }
 
-export const Task = (props:PropsType) => {
-
+export const Task = React.memo ((props:PropsType) => {
+    console.log(props.title)
     const removeTaskHandler = () => {
-      props.removeTask(props.taskId, props.todolistId )
+      props.removeTask(props.taskId)
     };
     const changeTaskStatus = (e:any)=> {
         let newIsDone = e.currentTarget.checked
-        props.changeTaskStatus(props.todolistId, props.taskId, newIsDone)
-    }
+        props.changeTaskStatus(props.taskId, newIsDone)
+    };
 
     return (
         <div>
@@ -28,5 +28,5 @@ export const Task = (props:PropsType) => {
             </li>
         </div>
     );
-};
+});
 
