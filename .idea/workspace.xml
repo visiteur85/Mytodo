@@ -2,13 +2,54 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="88f24762-b58a-492a-b112-71867b3ec24c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/api/todolist-api.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reportWebVitals.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/todolists-api.stories.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todoFromInkubator/todo13v2/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todoFromInkubator/todo13v2/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todoFromInkubator/todo13v2/.storybook/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todoFromInkubator/todo13v2/.storybook/preview.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todoFromInkubator/todo13v2/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todoFromInkubator/todo13v2/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todoFromInkubator/todo13v2/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todoFromInkubator/todo13v2/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todoFromInkubator/todo13v2/public/logo192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todoFromInkubator/todo13v2/public/logo512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todoFromInkubator/todo13v2/public/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todoFromInkubator/todo13v2/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todoFromInkubator/todo13v2/src/AddItemForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todoFromInkubator/todo13v2/src/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todoFromInkubator/todo13v2/src/App.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todoFromInkubator/todo13v2/src/EditableSpan.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todoFromInkubator/todo13v2/src/Task.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todoFromInkubator/todo13v2/src/Todolist.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todoFromInkubator/todo13v2/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todoFromInkubator/todo13v2/src/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todoFromInkubator/todo13v2/src/react-app-env.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todoFromInkubator/todo13v2/src/reportWebVitals.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todoFromInkubator/todo13v2/src/setupTests.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todoFromInkubator/todo13v2/src/state/store.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todoFromInkubator/todo13v2/src/state/tasks-reducer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todoFromInkubator/todo13v2/src/state/todolists-reducer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todoFromInkubator/todo13v2/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todoFromInkubator/todo13v2/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.storybook/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/.storybook/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AddItemForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/AddItemForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.tsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/EditableSpan.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/EditableSpan.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Task.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Todolist.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state/taskReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/taskReducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/setupTests.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/setupTests.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/taskReducer.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/todolistReducer.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -248,7 +289,14 @@
       <workItem from="1653309126154" duration="7834000" />
       <workItem from="1653382061121" duration="3163000" />
       <workItem from="1653405234023" duration="3734000" />
-      <workItem from="1653409416041" duration="2171000" />
+      <workItem from="1653409416041" duration="2510000" />
+      <workItem from="1653420656744" duration="328000" />
+      <workItem from="1653478729895" duration="44000" />
+      <workItem from="1653987172048" duration="103000" />
+      <workItem from="1653987305927" duration="363000" />
+      <workItem from="1653987837643" duration="2065000" />
+      <workItem from="1653996970897" duration="1433000" />
+      <workItem from="1653998937121" duration="9630000" />
     </task>
     <task id="LOCAL-00001" summary="add two reducers">
       <created>1647949571440</created>
@@ -432,7 +480,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653129488328</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="useCallback">
+      <created>1653416403830</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1653416403830</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -463,6 +518,48 @@
     <MESSAGE value="add less 14 part 1" />
     <MESSAGE value="add reduxxx" />
     <MESSAGE value="add les 9 my" />
-    <option name="LAST_COMMIT_MESSAGE" value="add les 9 my" />
+    <MESSAGE value="useCallback" />
+    <option name="LAST_COMMIT_MESSAGE" value="useCallback" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/App.tsx</url>
+          <line>46</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/api/todolist-api.ts</url>
+          <line>18</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/api/todolist-api.ts</url>
+          <line>22</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/api/todolist-api.ts</url>
+          <line>27</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/api/todolist-api.ts</url>
+          <line>37</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/api/todolist-api.ts</url>
+          <line>41</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
