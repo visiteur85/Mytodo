@@ -14,12 +14,19 @@ import {Menu} from '@mui/icons-material';
 import {
     addTodolistAC,
     changeTodolistFilterAC,
-    changeTodolistTitleAC, fetchTodosThunk,
+    changeTodolistTitleAC, fetchTodosTs,
     FilterValuesType,
     removeTodolistAC, setTodolistAC,
     TodolistDomainType
 } from './state/todolists-reducer'
-import {addTaskAC, changeTaskStatusAC, changeTaskTitleAC, removeTaskAC} from './state/tasks-reducer';
+import {
+    addTaskAC,
+    addTaskTs,
+    changeTaskStatusAC,
+    changeTaskTitleAC,
+    deleteTasksTC,
+    removeTaskAC, updateTaskStatusTS
+} from './state/tasks-reducer';
 import {useDispatch, useSelector} from 'react-redux';
 import {AppRootStateType} from './state/store';
 import {TaskStatuses, TaskType, todolistsAPI} from './api/todolists-api'
@@ -37,23 +44,23 @@ function App() {
     const dispatch = useDispatch();
 
     useEffect(() => {
-            dispatch(fetchTodosThunk)
+            dispatch(fetchTodosTs())
         }, []
     );
 
     const removeTask = useCallback(function (id: string, todolistId: string) {
-        const action = removeTaskAC(id, todolistId);
-        dispatch(action);
+
+        dispatch(deleteTasksTC(todolistId, id));
     }, []);
 
     const addTask = useCallback(function (title: string, todolistId: string) {
-        const action = addTaskAC(title, todolistId);
-        dispatch(action);
+
+        dispatch(addTaskTs(todolistId, title));
     }, []);
 
     const changeStatus = useCallback(function (id: string, status: TaskStatuses, todolistId: string) {
-        const action = changeTaskStatusAC(id, status, todolistId);
-        dispatch(action);
+
+        dispatch(updateTaskStatusTS(todolistId, id, status));
     }, []);
 
     const changeTaskTitle = useCallback(function (id: string, newTitle: string, todolistId: string) {
