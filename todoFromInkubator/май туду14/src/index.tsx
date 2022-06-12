@@ -1,10 +1,12 @@
+//https://www.youtube.com/watch?v=VZhtyK4h1YU&list=PLbLBXDhswD1dV72iZuGrLn4JuCsnulu_V&index=32&t=15026s
+//43-20
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import App from './App';
 import reportWebVitals from './reportWebVitals';
-import App from './app/App';
 import { Provider } from 'react-redux';
-import { store } from './app/store';
+import { store } from './state/store';
 
 ReactDOM.render(
     <React.StrictMode>
