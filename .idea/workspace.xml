@@ -1,63 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="88f24762-b58a-492a-b112-71867b3ec24c" name="Changes" comment="les 16-3">
-      <change afterPath="$PROJECT_DIR$/src/AddItemForm.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EditableSpan.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Task.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Todolist.tsx" afterDir="false" />
+    <list default="true" id="88f24762-b58a-492a-b112-71867b3ec24c" name="Changes" comment="les 14-1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/App.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app-reducer.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/store.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AddItemForm/AddItemForm.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/EditableSpan/EditableSpan.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ErrorSnackbar/ErrorSnackbar.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/Login/Login.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/Login/authReducer.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/Todolist/Task/Task.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/Todolist/Todolist.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/TodolistsList.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/tasks-reducer.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/todolists-reducer.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todoFromInkubator/my13/src/AddItemForm.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/todoFromInkubator/my13/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/todoFromInkubator/my13/src/App.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/todoFromInkubator/my13/src/EditableSpan.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/todoFromInkubator/my13/src/Task.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/todoFromInkubator/my13/src/Todolist.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/todoFromInkubator/my13/src/api/tasks-api.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/todoFromInkubator/my13/src/api/todolist-api.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/todoFromInkubator/my13/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/todoFromInkubator/my13/src/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/todoFromInkubator/my13/src/react-app-env.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/todoFromInkubator/my13/src/reportWebVitals.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/todoFromInkubator/my13/src/setupTests.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/todoFromInkubator/my13/src/state/store.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/todoFromInkubator/my13/src/state/tasks-reducer.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/todoFromInkubator/my13/src/state/todolists-reducer.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/todoFromInkubator/my13/src/stories/tasks-api.stories.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/todoFromInkubator/my13/src/stories/todolists-api.stories.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/todoFromInkubator/май туду14/src/AddItemForm.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/todoFromInkubator/май туду14/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/todoFromInkubator/май туду14/src/App.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/todoFromInkubator/май туду14/src/EditableSpan.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/todoFromInkubator/май туду14/src/Task.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/todoFromInkubator/май туду14/src/Todolist.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/todoFromInkubator/май туду14/src/api/todolists-api.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/todoFromInkubator/май туду14/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/todoFromInkubator/май туду14/src/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/todoFromInkubator/май туду14/src/react-app-env.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/todoFromInkubator/май туду14/src/reportWebVitals.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/todoFromInkubator/май туду14/src/setupTests.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/todoFromInkubator/май туду14/src/state/store.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/todoFromInkubator/май туду14/src/state/tasks-reducer.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/todoFromInkubator/май туду14/src/state/todolists-reducer.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -337,7 +282,9 @@
       <workItem from="1655633509759" duration="699000" />
       <workItem from="1655739225802" duration="1826000" />
       <workItem from="1655811645325" duration="1422000" />
-      <workItem from="1655887666396" duration="4288000" />
+      <workItem from="1655887666396" duration="5137000" />
+      <workItem from="1655915048036" duration="525000" />
+      <workItem from="1655977922356" duration="3992000" />
     </task>
     <task id="LOCAL-00001" summary="add two reducers">
       <created>1647949571440</created>
@@ -584,7 +531,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655550454328</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="les 14-1">
+      <created>1655898433140</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1655898433140</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -603,7 +557,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add les1-6 full" />
     <MESSAGE value="add les11" />
     <MESSAGE value="add les11 by mySelf" />
     <MESSAGE value="add les11 new Comp" />
@@ -628,6 +581,31 @@
     <MESSAGE value="les 15-finish" />
     <MESSAGE value="les 16-1" />
     <MESSAGE value="les 16-3" />
-    <option name="LAST_COMMIT_MESSAGE" value="les 16-3" />
+    <MESSAGE value="les 14-1" />
+    <option name="LAST_COMMIT_MESSAGE" value="les 14-1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/state/store.ts</url>
+          <line>12</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/state/store.ts</url>
+          <line>3</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/state/store.ts</url>
+          <line>2</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
