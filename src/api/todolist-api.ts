@@ -13,17 +13,51 @@ const instance = axios.create({
 
 export const todolistApi = {
     getTodos: () => {
-        return instance.get('todo-lists')
+        return instance.get<Array<TodoType>>('todo-lists')
     },
     createTodo: (title: string) => {
-        return instance.post('todo-lists', {title})
+        return instance.post<BaseType<{ item: TodoType }>>('todo-lists', {title})
     },
     deleteTodo: (todolistId: string) => {
-        return instance.delete(`todo-lists/${todolistId}`)
+        return instance.delete<BaseType>(`todo-lists/${todolistId}`)
     },
     updateTodo: (todolistId: string) => {
-        return instance.put(`todo-lists/${todolistId}`, {title: 'Books'})
+        return instance.put<BaseType>(`todo-lists/${todolistId}`, {title: 'Books'})
 
-    }
+    },
+    getTasks:(todolistId:string) => {
+        return instance.get(`todo-lists/${todolistId}/tasks`)
+    },
+    createTask: (title: string, todolistId:string) => {
+        return instance.post(`todo-lists/${todolistId}/tasks`, {title})
+    },
+    deleteTask: (todolistId: string, taskId:string) => {
+        return instance.delete(`todo-lists/${todolistId}/tasks/${taskId}`)
+    },
+    updateTask: (todolistId: string, taskId:string) => {
+        return instance.put(`todo-lists/${todolistId}/tasks/${taskId}`, {title: 'Hello'})
+
+    },
+
 
 }
+
+//type
+export type TodoType = {
+    id: string
+    addedDate: string
+    order: string
+    title: string
+}
+
+
+export type BaseType<T = {}> = {
+    resultCode: number
+    messages: string[]
+    fieldsErrors:string[]
+    data:T
+}
+
+
+
+
