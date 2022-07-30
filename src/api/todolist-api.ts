@@ -26,16 +26,16 @@ export const todolistApi = {
 
     },
     getTasks:(todolistId:string) => {
-        return instance.get(`todo-lists/${todolistId}/tasks`)
+        return instance.get<TasksType>(`todo-lists/${todolistId}/tasks`)
     },
     createTask: (title: string, todolistId:string) => {
-        return instance.post(`todo-lists/${todolistId}/tasks`, {title})
+        return instance.post<BaseTaskType<{ item:TasksType }>>(`todo-lists/${todolistId}/tasks`, {title})
     },
     deleteTask: (todolistId: string, taskId:string) => {
-        return instance.delete(`todo-lists/${todolistId}/tasks/${taskId}`)
+        return instance.delete<BaseTaskType>(`todo-lists/${todolistId}/tasks/${taskId}`)
     },
     updateTask: (todolistId: string, taskId:string) => {
-        return instance.put(`todo-lists/${todolistId}/tasks/${taskId}`, {title: 'Hello'})
+        return instance.put<BaseTaskType>(`todo-lists/${todolistId}/tasks/${taskId}`, {title: 'remove me, please'})
 
     },
 
@@ -58,6 +58,33 @@ export type BaseType<T = {}> = {
     data:T
 }
 
+export type TasksType = {
+    items: TaskType[]
+    totalCount: number
+    error:string
+};
 
+export type TaskType  = {
+    description: string
+    title: string
+    completed: boolean
+    status: number
+    priority: number
+    startDate: string
+    deadline: string
+    id: string
+    todoListId: string
+    order: number
+    addedDate: string
+}
+
+
+
+export type BaseTaskType<T = {}> = {
+    fieldsErrors: string[]
+    messages: string[]
+    resultCode: 0
+    data:T
+}
 
 
