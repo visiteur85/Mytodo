@@ -1,7 +1,6 @@
 import { v1 } from 'uuid';
-import {todolistsAPI, TodolistType} from '../api/todolists-api'
-import {Dispatch} from "redux";
-import {AppRootStateType} from "./store";
+import { TodolistType } from '../api/todolists-api'
+import {colors} from "@mui/material";
 
 export type RemoveTodolistActionType = {
     type: 'REMOVE-TODOLIST',
@@ -23,11 +22,10 @@ export type ChangeTodolistFilterActionType = {
     filter: FilterValuesType
 }
 
-
-
 type ActionsType = RemoveTodolistActionType | AddTodolistActionType
     | ChangeTodolistTitleActionType
-    | ChangeTodolistFilterActionType | SetTodosType
+    | ChangeTodolistFilterActionType
+| setTodolistType
 
 const initialState: Array<TodolistDomainType> = [
     /*{id: todolistId1, title: 'What to learn', filter: 'all', addedDate: '', order: 0},
@@ -69,10 +67,6 @@ export const todolistsReducer = (state: Array<TodolistDomainType> = initialState
             }
             return [...state]
         }
-        case "SET-TODOS": {
-            let todoForuI:any  = action.todos.map((item)=> {return {...item, filter:"all" as FilterValuesType} });
-            return todoForuI
-        }
         default:
             return state;
     }
@@ -90,17 +84,11 @@ export const changeTodolistTitleAC = (id: string, title: string): ChangeTodolist
 export const changeTodolistFilterAC = (id: string, filter: FilterValuesType): ChangeTodolistFilterActionType => {
     return {type: 'CHANGE-TODOLIST-FILTER', id: id, filter: filter}
 }
-export type SetTodosType = ReturnType<typeof setTodoAC>
-export const setTodoAC = (todos:TodolistType[]) => {
-    return {type: 'SET-TODOS', todos} as const
+export type setTodolistType = ReturnType<typeof setTodolistAC>
+export const setTodolistAC = (todolists: TodolistType[]) => {
+return {
+    type: "SET-TODOS",
+    todolists
+} as const
 }
 
-//thunk
-export const fetchTodosThunk = (dispatch:Dispatch) => {
-    todolistsAPI.getTodolists()
-        .then((res)=>{
-            let todos = res.data
-            dispatch(setTodoAC(todos))
-        })
-
-}
